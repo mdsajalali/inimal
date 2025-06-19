@@ -8,20 +8,73 @@
       rel="stylesheet"
     />
     <link href="/dist/output.css" rel="stylesheet" />
-    <!-- ICON CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <title>Inimal</title>
   </head>
   <body>
-    <header class="wrapper">
-      <h1 class="">Welcome to Inimal</h1>
+    <!-- header code start here -->
+    <header class="bg-primary text-white py-4">
+      <div class="wrapper flex items-center justify-between">
+        <ul class="flex items-center">
+          <li class="text-[14px] font-normal border-r h-6 px-5 cursor-pointer">
+            About Us
+          </li>
+          <li class="text-[14px] font-normal border-r h-6 px-5 cursor-pointer">
+            My Account
+          </li>
+          <li class="text-[14px] font-normal border-r h-6 px-5 cursor-pointer">
+            My Wishlist
+          </li>
+          <li class="text-[14px] font-normal px-5 cursor-pointer">
+            Order Tracking
+          </li>
+        </ul>
+        <div class="flex items-center gap-2">
+          <div class="flex items-center gap-2">
+            <img class="w-4 h-4" src="./images/header/medicine.svg" alt="" />
+            <span class="text-[#FFF] text-[14px]">Medicine Category</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="bg-red-500 text-sm px-2 py-1 font-bold rounded">
+              25% OFF
+            </div>
+            <span class="text-[14px] text-[#fff]">Today</span>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <div class="flex items-center gap-2">
+            <img class="w-4 h-4" src="./images/header/support.svg" alt="" />
+            <span class="text-[14px]"
+              >Need Support <span class="px-2"> ? </span> Call Us</span
+            >
+            <div class="bg-red-600 text-sm px-2 py-1 font-bold rounded mr-6">
+              (480) 555-0103
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div class="flex items-center cursor-pointer">
+              <img
+                class="bg-blue-500 rounded-full p-1"
+                src="./images/header/language.svg"
+                alt=""
+              />
+              <option value="" class="px-2">English</option>
+              <img class="pr-4" src="./images/header/arrow.svg" alt="" />
+            </div>
+            <div class="flex items-center cursor-pointer">
+              <img
+                class="bg-blue-500 rounded-full p-1"
+                src="./images/header/dollar.svg"
+                alt=""
+              />
+              <option value="" class="px-2">USD</option>
+              <img src="./images/header/arrow.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
+    <!-- header code end here -->
+
     <!-- JS FILE LINK -->
     <script src="./js/main.js"></script>
   </body>
