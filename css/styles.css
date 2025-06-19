@@ -12,3 +12,11 @@ html {
   max-width: 1632px;
   margin: auto;
 }
+
+.icon-hover {
+  position: relative;
+}
+.icon-hover:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
