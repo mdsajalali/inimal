@@ -11,6 +11,7 @@ html {
 .wrapper {
   max-width: 1632px;
   margin: auto;
+  padding: 0 10px;
 }
 
 .icon-hover {
