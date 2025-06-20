@@ -64,31 +64,59 @@
             <span class="text-[14px]"
               >Need Support <span class="px-2"> ? </span> Call Us</span
             >
-            <div class="bg-[#FFC107] text-sm px-2 py-1 font-bold rounded">
+            <div
+              class="bg-[#FFC107] text-sm px-2 py-1 font-bold rounded md:mr-4"
+            >
               (480) 555-0103
             </div>
           </div>
           <div
             class="flex flex-wrap justify-center sm:justify-start items-center gap-4"
           >
-            <div class="flex items-center cursor-pointer gap-2">
+            <div class="relative flex items-center gap-2 cursor-pointer">
               <img
                 class="bg-[#007B55] rounded-full p-1"
                 src="./images/header/language.svg"
-                alt=""
+                alt="Language Icon"
               />
-              <option value="" class="text-[14px]">English</option>
-              <img src="./images/header/arrow.svg" alt="" />
+              <select
+                class="appearance-none bg-primary text-white text-[14px] pr-6 pl-2 py-1 rounded outline-none cursor-pointer"
+              >
+                <option value="en">English</option>
+                <option value="bn">বাংলা</option>
+                <option value="fr">Français</option>
+                <option value="es">Español</option>
+                <option value="de">Deutsch</option>
+              </select>
+              <img
+                class="absolute right-2 pointer-events-none"
+                src="./images/header/arrow.svg"
+                alt="Arrow Icon"
+              />
             </div>
+
             <span class="hidden sm:inline border-r border-[#007B55] h-6"></span>
-            <div class="flex items-center cursor-pointer gap-2">
+
+            <div class="relative flex items-center gap-2 cursor-pointer">
               <img
                 class="bg-[#007B55] rounded-full p-1"
                 src="./images/header/dollar.svg"
-                alt=""
+                alt="Currency Icon"
               />
-              <option value="" class="text-[14px]">USD</option>
-              <img src="./images/header/arrow.svg" alt="" />
+              <select
+                class="appearance-none bg-primary text-white text-[14px] pr-6 pl-2 py-1 rounded outline-none cursor-pointer"
+              >
+                <option value="usd">USD</option>
+                <option value="eur">EUR</option>
+                <option value="gbp">GBP</option>
+                <option value="bdt">BDT</option>
+                <option value="inr">INR</option>
+              </select>
+              <img
+                class="absolute right-0 pointer-events-none"
+                src="./images/header/arrow.svg"
+                alt="Arrow Icon"
+              />
             </div>
           </div>
         </div>
