@@ -693,6 +693,14 @@ video {
   top: 0.5rem;
 }
 
+.top-4{
+  top: 1rem;
+}
+
+.right-4{
+  right: 1rem;
+}
+
 .isolate{
   isolation: isolate;
 }
@@ -761,6 +769,11 @@ video {
 .my-5{
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
+}
+
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .mb-1{
@@ -918,6 +931,10 @@ video {
   height: 100%;
 }
 
+.h-\[56px\]{
+  height: 56px;
+}
+
 .w-4{
   width: 1rem;
 }
@@ -944,6 +961,10 @@ video {
 
 .w-auto{
   width: auto;
+}
+
+.w-\[666px\]{
+  width: 666px;
 }
 
 .flex-shrink{
@@ -2256,6 +2277,11 @@ video {
   padding-bottom: 49px;
 }
 
+.\!py-4{
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -2274,6 +2300,26 @@ video {
 
 .pt-5{
   padding-top: 1.25rem;
+}
+
+.pt-4{
+  padding-top: 1rem;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
+}
+
+.pt-3{
+  padding-top: 0.75rem;
+}
+
+.\!pb-4{
+  padding-bottom: 1rem !important;
+}
+
+.\!pt-3{
+  padding-top: 0.75rem !important;
 }
 
 .text-left{
@@ -2539,6 +2585,10 @@ video {
 .text-yellow-400{
   --tw-text-opacity: 1;
   color: rgb(250 204 21 / var(--tw-text-opacity));
+}
+
+.text-\[1\]{
+  color: 1;
 }
 
 .underline{
@@ -3268,6 +3318,11 @@ html {
 
   .\32xl\:justify-between{
     justify-content: space-between;
+  }
+
+  .\32xl\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
 
