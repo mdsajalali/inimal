@@ -701,6 +701,14 @@ video {
   top: 0.5rem;
 }
 
+.right-4{
+  right: 1rem;
+}
+
+.right-5{
+  right: 1.25rem;
+}
+
 .isolate{
   isolation: isolate;
 }
@@ -787,6 +795,11 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.my-6{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .mb-1{
   margin-bottom: 0.25rem;
 }
@@ -821,6 +834,10 @@ video {
 
 .mt-\[24px\]{
   margin-top: 24px;
+}
+
+.ml-\[60px\]{
+  margin-left: 60px;
 }
 
 .box-border{
@@ -948,6 +965,10 @@ video {
 
 .h-full{
   height: 100%;
+}
+
+.h-\[600px\]{
+  height: 600px;
 }
 
 .w-3{
@@ -1917,6 +1938,10 @@ video {
   border-radius: 0.375rem;
 }
 
+.rounded-\[24px\]{
+  border-radius: 24px;
+}
+
 .rounded-b{
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -2120,6 +2145,20 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\]{
+  background-color: ;
+}
+
+.bg-\[\#F2F4F7\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 244 247 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#FF4842\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 72 66 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-30{
   --tw-bg-opacity: 0.3;
 }
@@ -2320,6 +2359,16 @@ video {
   padding-bottom: 13px !important;
 }
 
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-\[150px\]{
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
 .\!pb-4{
   padding-bottom: 1rem !important;
 }
@@ -2346,6 +2395,10 @@ video {
 
 .pt-5{
   padding-top: 1.25rem;
+}
+
+.pl-\[60px\]{
+  padding-left: 60px;
 }
 
 .text-left{
@@ -2459,6 +2512,14 @@ video {
   line-height: 1rem;
 }
 
+.text-\[18px\]{
+  font-size: 18px;
+}
+
+.text-\[48px\]{
+  font-size: 48px;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -2541,6 +2602,14 @@ video {
 .stacked-fractions{
   --tw-numeric-fraction: stacked-fractions;
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
+}
+
+.leading-\[\]{
+  line-height: ;
+}
+
+.leading-\[64px\]{
+  line-height: 64px;
 }
 
 .text-\[\#212B36\]{
