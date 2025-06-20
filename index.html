@@ -10,6 +10,7 @@
     <link href="/dist/output.css" rel="stylesheet" />
     <title>Inimal</title>
   </head>
+
   <body>
     <!-- header code start here -->
     <header class="bg-primary text-white py-4">
@@ -217,10 +218,63 @@
     <!-- header code end here -->
 
     <!-- nav items start here -->
-    <hr />
-    <nav class="wrapper flex items-center justify-between py-[13px]">
+    <div class="wrapper py-3 flex items-center justify-between lg:hidden">
+      <img src="./images/header/logo.svg" alt="Logo" class="h-8" />
+      <button id="menuToggle" class="text-white bg-primary p-2 rounded-md">
+        <svg
+          id="menuOpenIcon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path stroke="#fff" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <div
+      id="menuBackdrop"
+      class="fixed inset-0 bg-black bg-opacity-30 z-40 hidden lg:hidden"
+    ></div>
+
+    <div
+      id="mobileMenu"
+      class="fixed top-0 left-0 w-72 max-w-full h-full bg-white shadow-xl z-50 transform -translate-x-full transition-transform duration-300 lg:hidden overflow-y-auto"
+    >
+      <div class="flex items-center justify-between p-4 border-b">
+        <h2 class="text-lg font-bold text-primary">Explore All Categories</h2>
+        <button id="menuCloseBtn" class="text-primary">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path stroke="#00AB55" stroke-width="2" d="M6 6l12 12M6 18L18 6" />
+          </svg>
+        </button>
+      </div>
+      <ul class="flex flex-col gap-4 p-4 text-[16px] font-semibold">
+        <li class="cursor-pointer">Home</li>
+        <li class="cursor-pointer">About Us</li>
+        <li class="cursor-pointer">Shop</li>
+        <li class="cursor-pointer">Sellers</li>
+        <li class="cursor-pointer">Mega Menu</li>
+        <li class="cursor-pointer">Blog</li>
+        <li class="cursor-pointer">Pages</li>
+        <li class="cursor-pointer">Contact</li>
+      </ul>
+    </div>
+
+    <hr class="hidden xl:block" />
+    <nav
+      class="wrapper flex items-center justify-between py-[13px] hidden lg:flex"
+    >
       <div
-        class="bg-primary shadow-green-custom flex items-center gap-2 py-2 px-3 rounded-md cursor-pointer"
+        class="bg-primary shadow-green-custom xl:flex hidden items-center gap-2 py-2 px-3 rounded-md cursor-pointer"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -265,7 +319,7 @@
           fill="none"
         >
           <path
-            d="M12 1.25004C12 1.25004 7.94931 6.74999 6.49996 6.75C5.0506 6.75001 1 1.25 1 1.25"
+            d="M12 1.25C12 1.25 7.949 6.75 6.5 6.75C5.051 6.75 1 1.25 1 1.25"
             stroke="white"
             stroke-width="1.5"
             stroke-linecap="round"
@@ -273,20 +327,20 @@
           />
         </svg>
       </div>
+
       <ul class="flex items-start justify-between gap-2">
         <li
           class="flex items-center gap-2 text-[16px] font-semibold cursor-pointer"
         >
           Home
           <svg
+            class="w-3 h-3"
             xmlns="http://www.w3.org/2000/svg"
-            width="13"
-            height="8"
             viewBox="0 0 13 8"
             fill="none"
           >
             <path
-              d="M12 1.25004C12 1.25004 7.94931 6.74999 6.49996 6.75C5.0506 6.75001 1 1.25 1 1.25"
+              d="M12 1.25C12 1.25 7.949 6.75 6.5 6.75C5.051 6.75 1 1.25 1 1.25"
               stroke="#212B36"
               stroke-width="1.5"
               stroke-linecap="round"
@@ -300,14 +354,13 @@
         >
           Shop
           <svg
+            class="w-3 h-3"
             xmlns="http://www.w3.org/2000/svg"
-            width="13"
-            height="8"
             viewBox="0 0 13 8"
             fill="none"
           >
             <path
-              d="M12 1.25004C12 1.25004 7.94931 6.74999 6.49996 6.75C5.0506 6.75001 1 1.25 1 1.25"
+              d="M12 1.25C12 1.25 7.949 6.75 6.5 6.75C5.051 6.75 1 1.25 1 1.25"
               stroke="#212B36"
               stroke-width="1.5"
               stroke-linecap="round"
@@ -316,18 +369,17 @@
           </svg>
         </li>
         <li
-          class="flex items-center gap-2 px-6 text-[16px] font-semibold cursor-pointer"
+          class="flex items-center px-6 gap-2 text-[16px] font-semibold cursor-pointer"
         >
-          Sellers
+          Seller
           <svg
+            class="w-3 h-3"
             xmlns="http://www.w3.org/2000/svg"
-            width="13"
-            height="8"
             viewBox="0 0 13 8"
             fill="none"
           >
             <path
-              d="M12 1.25004C12 1.25004 7.94931 6.74999 6.49996 6.75C5.0506 6.75001 1 1.25 1 1.25"
+              d="M12 1.25C12 1.25 7.949 6.75 6.5 6.75C5.051 6.75 1 1.25 1 1.25"
               stroke="#212B36"
               stroke-width="1.5"
               stroke-linecap="round"
@@ -340,14 +392,13 @@
         >
           Mega Menu
           <svg
+            class="w-3 h-3"
             xmlns="http://www.w3.org/2000/svg"
-            width="13"
-            height="8"
             viewBox="0 0 13 8"
             fill="none"
           >
             <path
-              d="M12 1.25004C12 1.25004 7.94931 6.74999 6.49996 6.75C5.0506 6.75001 1 1.25 1 1.25"
+              d="M12 1.25C12 1.25 7.949 6.75 6.5 6.75C5.051 6.75 1 1.25 1 1.25"
               stroke="#212B36"
               stroke-width="1.5"
               stroke-linecap="round"
@@ -356,18 +407,17 @@
           </svg>
         </li>
         <li
-          class="flex items-center gap-2 text-[16px] px-6 font-semibold cursor-pointer"
+          class="flex px-6 items-center gap-2 text-[16px] font-semibold cursor-pointer"
         >
           Blog
           <svg
+            class="w-3 h-3"
             xmlns="http://www.w3.org/2000/svg"
-            width="13"
-            height="8"
             viewBox="0 0 13 8"
             fill="none"
           >
             <path
-              d="M12 1.25004C12 1.25004 7.94931 6.74999 6.49996 6.75C5.0506 6.75001 1 1.25 1 1.25"
+              d="M12 1.25C12 1.25 7.949 6.75 6.5 6.75C5.051 6.75 1 1.25 1 1.25"
               stroke="#212B36"
               stroke-width="1.5"
               stroke-linecap="round"
@@ -380,14 +430,13 @@
         >
           Pages
           <svg
+            class="w-3 h-3"
             xmlns="http://www.w3.org/2000/svg"
-            width="13"
-            height="8"
             viewBox="0 0 13 8"
             fill="none"
           >
             <path
-              d="M12 1.25004C12 1.25004 7.94931 6.74999 6.49996 6.75C5.0506 6.75001 1 1.25 1 1.25"
+              d="M12 1.25C12 1.25 7.949 6.75 6.5 6.75C5.051 6.75 1 1.25 1 1.25"
               stroke="#212B36"
               stroke-width="1.5"
               stroke-linecap="round"
@@ -397,6 +446,7 @@
         </li>
         <li class="px-6 cursor-pointer text-[16px] font-semibold">Contact</li>
       </ul>
+
       <div>
         <div class="flex items-center gap-2">
           <img
@@ -415,7 +465,7 @@
         </div>
       </div>
     </nav>
-    <hr />
+    <hr class="hidden xl:block" />
     <!-- nav items end here -->
 
     <!-- hero section start here -->
