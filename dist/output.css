@@ -827,6 +827,14 @@ video {
   margin-top: 24px;
 }
 
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -1930,6 +1938,10 @@ video {
   border-radius: 0.375rem;
 }
 
+.rounded-\[6px\]{
+  border-radius: 6px;
+}
+
 .rounded-b{
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -2153,6 +2165,41 @@ video {
 
 .bg-\[\#\]{
   background-color: #;
+}
+
+.bg-\[\#B78103\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(183 129 3 / var(--tw-bg-opacity));
+}
+
+.bg-\[rgba\(255\2c 193\2c 7\2c 0\.16\)\]{
+  background-color: rgba(255,193,7,0.16);
+}
+
+.bg-\[rgba\(255\2c 72\2c 7\2c 0\.16\)\]{
+  background-color: rgba(255,72,7,0.16);
+}
+
+.bg-\[\#229A16\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 154 22 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#229A16\]\/10{
+  background-color: rgb(34 154 22 / 0.1);
+}
+
+.bg-\[\#0C53B7\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(12 83 183 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#0C53B7\]\/50{
+  background-color: rgb(12 83 183 / 0.5);
+}
+
+.bg-\[\#0C53B7\]\/10{
+  background-color: rgb(12 83 183 / 0.1);
 }
 
 .bg-opacity-30{
@@ -2510,6 +2557,14 @@ video {
   line-height: 1rem;
 }
 
+.text-\[13px\]{
+  font-size: 13px;
+}
+
+.text-\[18px\]{
+  font-size: 18px;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -2675,6 +2730,34 @@ video {
 .text-yellow-400{
   --tw-text-opacity: 1;
   color: rgb(250 204 21 / var(--tw-text-opacity));
+}
+
+.text-\[\]{
+  color: ;
+}
+
+.text-\[\#\]{
+  color: #;
+}
+
+.text-\[\#B78103\]{
+  --tw-text-opacity: 1;
+  color: rgb(183 129 3 / var(--tw-text-opacity));
+}
+
+.text-\[\#B72136\]{
+  --tw-text-opacity: 1;
+  color: rgb(183 33 54 / var(--tw-text-opacity));
+}
+
+.text-\[\#229A16\]{
+  --tw-text-opacity: 1;
+  color: rgb(34 154 22 / var(--tw-text-opacity));
+}
+
+.text-\[\#0C53B7\]{
+  --tw-text-opacity: 1;
+  color: rgb(12 83 183 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -3325,6 +3408,10 @@ html {
     margin-top: 1.5rem;
   }
 
+  .md\:mb-10{
+    margin-bottom: 2.5rem;
+  }
+
   .md\:h-4{
     height: 1rem;
   }
@@ -3365,6 +3452,10 @@ html {
     gap: 1.5rem;
   }
 
+  .md\:gap-\[24px\]{
+    gap: 24px;
+  }
+
   .md\:gap-x-2{
     -moz-column-gap: 0.5rem;
          column-gap: 0.5rem;
@@ -3372,6 +3463,10 @@ html {
 
   .md\:border-r{
     border-right-width: 1px;
+  }
+
+  .md\:p-\[24px\]{
+    padding: 24px;
   }
 
   .md\:\!py-\[48px\]{
@@ -3417,6 +3512,15 @@ html {
 
   .md\:text-\[20px\]{
     font-size: 20px;
+  }
+
+  .md\:text-\[32px\]{
+    font-size: 32px;
+  }
+
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
